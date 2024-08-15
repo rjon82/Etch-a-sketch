@@ -8,24 +8,30 @@
     <script src="etch-ui.js"></script>
 </head>
 <body>
-    <div id = "header">
-        <img src="./imgs/odin_logo.png" alt="odin logo" width="75" height="75">
-        <h1>Etch a sketch</h1>
+    <div>
+        <div id = "header">
+            <img src="./imgs/odin_logo.png" alt="odin logo" width="60" height="60">
+            <h1>Etch a sketch</h1>
+        </div>
     </div>
-    <div id= "content">
-        <div id="left_column">
-            <p>Colors</p>
-            <p>Grid size:</p>
-            <input type="range" id="slider" name="slider" min="0" max="50" value="25" step="1">
-        </div>
-        <div id="grid">empty boxes go here</div>
-        <div id="features">
-            <input type="color" id="colorpicker" value="#0000ff">
-            <div id="color_selection">Color</div>
-            <div id="rainbow">Rainbow</div>
-            <div id="erase">Erase</div>
-            <div id="clear_drawing">Clear</div>
-        </div>
-    </div> 
+    <div id="container">
+        <div id= "content">
+            <div id="left_column">
+                <div id="color_selection">
+                    <p>Colors</p>
+                </div>
+                <p>Grid size:</p>
+                <input type="range" id="slider" name="slider" min="0" max="50" value="25" step="1">
+            </div>
+            <div id="grid">empty boxes go here</div>
+            <div id="features">
+                <input type="color" id="colorpicker" value="#0000ff">
+                <div id="color_selection">Color</div>
+                <div id="rainbow">Rainbow</div>
+                <div id="erase">Erase</div>
+                <div id="clear_drawing">Clear</div>
+            </div>
+        </div> 
+    </div>
 </body>
 </html>
