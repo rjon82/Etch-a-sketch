@@ -3,6 +3,8 @@ html,body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    overflow: hidden;
 }
 
 body {
@@ -17,34 +19,37 @@ body {
 }
 
 #container {
-    flex-grow: 1;
+    height: 100%;
     background-color: rgb(249, 250, 251);
 }
 
 #content {
     display: flex;
     justify-content: space-around;
-    border-top:1px solid rgb(229 231 235);
-    padding-top: 50px;
+    border-top:2px solid rgb(217, 220, 224);
+    padding: 50px 100px;
     flex-wrap: wrap
+    
 }  
 
 #slider {
     width: 100%;
+    margin-top: -20px;
 }
 
 #left_column {
     min-width: 200px;
-    padding-left: 80px;
     font-size: 15pt;
 }
 
 #color_selection {
-    border-bottom: 1px solid rgb(217, 220, 224);
+    border-bottom: 2px solid rgb(217, 220, 224);
 }
 
 #grid {
-    border: 1px solid black;
+    background-color: white;
+    border: 2px solid rgb(217, 220, 224);
+    border-radius: 1%;
     min-width: 500px;
     min-height: 500px;
     margin: auto;
@@ -56,7 +61,6 @@ body {
     min-height: 100%;
     justify-content: space-around;
     align-items: center;
-    padding-right: 80px;
 }
 
 button{
@@ -66,7 +70,7 @@ button{
   
 }
 
-input{
+input#colorpicker{
     width: 100%;
     height: 50px;
     padding: -20;
